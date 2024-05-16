@@ -1,0 +1,9 @@
+Module
+  name: game_minigame
+  description: Play the Jump button minigame
+  author: prateek
+  website: --
+  sandboxed: true
+  scripts: [ minigame ]
+  @onLoad: init()
+  @onUnload: terminate()

@@ -1,0 +1,15 @@
+MainWindow
+  id: minigameWindow
+  !text: tr('Minigame')
+  size: 400 300
+  @onEscape: modules.game_minigame.destroyWindows()
+
+  Button
+    id: JumpButton
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    !text: tr('Jump!')
+    margin-right: 0
+    margin-bottom : 200
+    width: 80
+    @onClick: modules.game_minigame.resetMargins()

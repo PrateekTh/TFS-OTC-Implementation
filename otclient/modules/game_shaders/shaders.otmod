@@ -1,0 +1,9 @@
+Module
+  name: game_shaders
+  description: Manage game shaders
+  author: prateek
+  website: --
+  scripts: [ shaders.lua ]
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()
