@@ -51,9 +51,9 @@ I believe I may have gone overboard in places, trying to explain things much mor
 
 1. **Code Implementation based tests** (Q1 - Q4) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/questions.md)
 
-2. Custom Spells (Q5) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/spells.md)
-3. Custom Shader Effects - Client (Q6)
-4. Creating Simple Modules - Client (Q7)
+2. Custom Spells (Q5) - `Server` - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/spells.md)
+3. Custom Shader Effects - `Client` (Q6) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/shaders.md)
+4. Creating Simple Modules - `Client` (Q7) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/modules.md)
 
 # Conclusion
 
