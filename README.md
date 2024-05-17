@@ -8,7 +8,9 @@ This project is the submission for the assignment that I was provided by Tavernl
 
 # Software / Tech Stack
 
-The primary basis for the implementation include TFS & OTC, both of which are Open Source software
+<img src="https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/bf8e4aa6-0730-4c82-98e6-4d6a2758c797" width="200" title="tibia-logo">
+
+The primary basis for the implementation include TFS & OTC, both of which are Open Source.
 
 ### The Forgotten Server - v 1.4.2
 
