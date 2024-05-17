@@ -49,7 +49,8 @@ Local setup involves:
 
 I believe I may have gone overboard in places, trying to explain things much more than developers actually need. Still, it may be considered valid for the assignment's purpose, as in my view they are meant to reflect my understanding of the code I write, moreso than making already proficient developers' understand. I think they may prove very helpful for anyone who is completely new to this kind of project as well!
 
-1. Question Implementation based tests (Q1 - Q4)
+1. **Code Implementation based tests** (Q1 - Q4) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/questions.md)
+
 2. Custom Spells (Q5)
 3. Custom Shader Effects - Client (Q6)
 4. Creating Simple Modules - Client (Q7)
