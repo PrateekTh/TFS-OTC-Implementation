@@ -43,9 +43,7 @@ The main difficulty, as can be seen from the implementation, was due to the inav
 
 Here is the implementation of the trail shader:
 
-
 https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/c52d4524-173a-4f61-aadb-6add76c6294b
-
 
 ## Outline Shader
 
@@ -66,7 +64,6 @@ Results:
 
 https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/6b4813a7-38db-4028-a745-00592e13a03a
 
-
 For a player only shader, the sobel filter will be applied to the alpha channel only, instead of the entire color, to detect edges.
 
 ## Other Shaders
@@ -86,6 +83,8 @@ A dithering post process effect, with a kernel based implementation. The video c
 
 This effect is inspired by DIO's abilities from JoJo's Bizzare Adventure. Please refer to [this video](https://youtu.be/sWk9qsxEWKg?si=uLWY_0T8rvW0zPHM), for the reference.
 
-
 https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/24a14d4a-a2f0-412c-9374-1ffcba29efa5
 
+## Conclusion
+
+I have always had an affinity for creating great visuals and visual styles, not exactly in context of realism, but rather as expression. Shaders prove to be an excellent channel(or buffer, I should say) for that, and also a solid middle ground between my technical and creative ventures. Thus, I feel this part was definitely the most fun part of the project for me, no matter the difficulty!
