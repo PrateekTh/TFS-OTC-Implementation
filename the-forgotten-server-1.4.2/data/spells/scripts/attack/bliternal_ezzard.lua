@@ -69,6 +69,7 @@ function renderCustomEffect(cid, area)
                 pos = Position(curr_position)
                 -- Set Area Combat and effects
                 doAreaCombatHealth(cid, type, pos, 0, 50, 60, effects[(i * j * 2) % #effects + 1])
+                -- -- To animate each positon
                 --addEvent(doAreaCombatHealth, 20 * (i - charIndex) * (i - charIndex) * (j - charIndex) * (j - charIndex), cid, type, pos, 0, 4, 5, effect)
             end
         end
