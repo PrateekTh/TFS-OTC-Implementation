@@ -10,7 +10,7 @@ This project is the submission for the assignment that I was provided by Tavernl
 
 <img src="https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/bf8e4aa6-0730-4c82-98e6-4d6a2758c797" width="200" title="tibia-logo">
 
-The primary basis for the implementation include TFS & OTC, both of which are Open Source.
+The primary basis for the implementation include TFS & OTC, both of which are Open-Source. The main scripting language is `Lua`, with the TFS and OTC themselves being written in `C++`.
 
 ### The Forgotten Server - v 1.4.2
 
@@ -19,7 +19,7 @@ The primary basis for the implementation include TFS & OTC, both of which are Op
 TFS handles the server side of the game, with a robust set of features and a lot of flexibility.
 Local setup involves:
 
-1. Downloading TFS/Compiling it from the main repository.
+1. Downloading TFS/Compiling it from the main [github repository](https://github.com/otland/forgottenserver).
    - Here I went with the pre-compiled TFS build, since the requirement was version 1.4, and the current branch contained v1.5.
 2. Setting up a local server environment based on any XAMP/WAMP solution, and add the server side webpage to it.
    - I have used Uniform server for this purpose, along with ZNoteAAC.
@@ -39,9 +39,9 @@ OT Client has been used as the client side for this project.
 Local setup involves:
 
 1. Downloading OTC/Compiling it from the main repository.
-   - Here, I compiled the latest version from the GitHub repository. (Windows)
+   - Here, I compiled the latest version from the [GitHub repository](https://github.com/edubart/otclient). (Windows)
 2. Setting up the `things` folder, with a desired version of spr and dat files.
-   - I have used the data files for version 10.98, though OTC supports most versions (except more recent ones)
+   - I used the data files for version 10.98, though OTC supports most versions (except more recent ones)
 3. Login to the account and select the desired character
    - Must be done after creating it via the ZNote website hosted on Uniform Server
 4. Add/Use any additional tools if required.
@@ -51,20 +51,22 @@ Local setup involves:
 
 I believe I may have gone overboard in places, trying to explain things much more than developers actually need. Still, it may be considered valid for the assignment's purpose, as in my view they are meant to reflect my understanding of the code I write, moreso than making already proficient developers' understand. I think they may prove very helpful for anyone who is completely new to this kind of project as well!
 
-1. **Code Implementation based tests** (Q1 - Q4) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/questions.md)
+1. **Code Implementation based tests** - (Q1 - Q4) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/questions.md)
 
-2. Custom Spells (Q5) - `Server` - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/spells.md)
-3. Custom Shader Effects - `Client` (Q6) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/shaders.md)
-4. Creating Simple Modules - `Client` (Q7) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/modules.md)
+2. **Custom Spells** - `Server` (Q5) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/spells.md)
+3. **Custom Shader Effects** - `Client` (Q6) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/shaders.md)
+4. **Creating Simple Modules** - `Client` (Q7) - [Link to Assignment](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/assignments/modules.md)
 
 # Conclusion
 
-I can feel that there was an array of things that I did not know or realise earlier, before working on this game, that I have now learned, and find myself immensely intrigued by.
+There is a vast array of things that I did not know or realise before working on this project, that I have now learned, and find myself immensely intrigued by: 
 
 - One of the primary things here has to be my experience with Lua. Though I have not gone over the benchmarks for speed yet, but with the amount of simplicity and power it offers, I can clearly understand why it is becoming the go-to language for several development projects.
 
 - While going through the source code, and implementing various features, I learned so much more about MMORPGs. Though I always knew they are vast (and definitely not easy to make), but now I have a better grasp over what goes into setting up a seamless experience. It certainly is more complex than I could have figured, but it has several avenues and it makes me quite excited to think about the possibilities, that we as developers can execute to enhance player experience!
 
 - The importance of proper documentation, is also something that I realised here. The Open Tibia project (especially OTC) is technically robust, and contains several features and once you look into it, quite structured source code. But due to there being quite sparse documentation in most places, most of these features are underutilized. While deciphering source code was an experience in itself, I cannot help but recognised the importance of well made documentation.
+
+Another thing that I will certainly look into soon is the [Open Tibia-Unity Project](https://slavi.gitbook.io/opentibiaunity), and [Mehah's OTC:Redemption](https://github.com/mehah/otclient). Both seem to be very promising in terms of graphical capabilities, which I would like to especially explore.
 
 All in all, this project was a blast to work on, and I liked so many parts of it that I could not cover them all if I tried. I hope it is fun for anyone who goes through it!
