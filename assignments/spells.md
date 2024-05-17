@@ -10,9 +10,11 @@ In order to reproduce the effect, I went over it closely, and made the following
 
 Thus, my overall conclusion was to create a spell that _iterates over multiple combat areas_, and eventually, I ended up creating **two spells**. I also realised that the mapping of the tornado effect needs to be considered, since instead of the player (or center of the screen) being at the center of the sprite, the given clip contains the player between two big tornadoes.
 
+The final step for both spells involved registering them in the `spells.xml` file, with the desired word and target file names.
+
 ## Spell 1: Eternal Blizzard - "froste"
 
-[Link to Code]()
+[Link to Code](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/the-forgotten-server-1.4.2/data/spells/scripts/attack/eternal_blizzard.lua)
 
 This spell closely replicates the given video. Please find the code in the `eternal_blizzard.lua` file in the above link, with the explanation in the comments. I will go over the process here as well, briefly:
 
@@ -24,9 +26,13 @@ This spell closely replicates the given video. Please find the code in the `eter
 
 The spell can be seen in action below:
 
+
+https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/9f41b093-7432-4a9a-bc10-7c2d3f11db12
+
+
 ## Spell 2: Bliternal Ezzard - "defroste"
 
-[Link to Code]()
+[Link to Code](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/the-forgotten-server-1.4.2/data/spells/scripts/attack/bliternal_ezzard.lua)
 
 The need for this spell came up as I was trying to fix the last step in the previous effect. Though I had replicated the required spell, I felt that there wasn't enough control.
 
@@ -48,6 +54,10 @@ The approach is rather simple, and the main components include working with posi
 This is certainly quite a lot of things happening for a spell, but I believe it can serve as a great template, and is built to be easily customized, which can then be optimised after the desired effect has been achieved.
 
 Here is the version of the spell that I saved, as the result:
+
+
+https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/94ae7d78-13c7-4e88-b936-a87ee4a28328
+
 
 ## Conclusion
 
