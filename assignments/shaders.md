@@ -5,7 +5,7 @@ The provided assignment video:
 While approaching this trial, I tried to see it from several angles, on how to approach this problem. The main components include:
 
 - The outline effect around the player
-- The trails getting executed behind the player
+- The trails following behind the player
 
 Apart from creating shaders that result in these effects, since both of these effects were applied only to the player, I needed to find a way to **bind** shaders to only the player. When I researched the forums and source code of OTC for this, the conclusion that came up was that OTC supports map shaders (and supposedly item shaders), the module to which was removed. Still, I needed to bind shaders to the player, in my case, and in this quest I came across [this](https://github.com/mehah/forgottenserver-optimized/commit/fd3c39aab64de281e733539e6a18bb994a9cba26#diff-5a026da090b6664f91c5f3bc4a9d0844cff966ef6fa5785d258b3aa47b370a2c) commit in mehah's TFS optimisation, which works efficiently with mehah's `OTClient:Redemption`
 
@@ -21,7 +21,7 @@ The main challenge, now that I had undertaken it, was for me to modify the main 
 
 ## Trail Shader
 
-[Link to Code]()
+[Link to Code](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/otclient/modules/game_shaders/shaders/trail.frag)
 
 The trail shader basically refers to the repeating sprite of the player, each instance of which I will be referring to as a "trail".
 The impementation can be found in the `trail.frag` file, in the `game_shaders` module. As with the spells assignment, the code contains the detailed explanation for each step, and I will cover the approach here:
@@ -43,13 +43,17 @@ The main difficulty, as can be seen from the implementation, was due to the inav
 
 Here is the implementation of the trail shader:
 
+
+https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/c52d4524-173a-4f61-aadb-6add76c6294b
+
+
 ## Outline Shader
 
-[Link to Code]()
+[Link to Code](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/otclient/modules/game_shaders/shaders/outline.frag)
 
 For the outline, I applied a sobel filter across all the pixels, and modified it to allow for more customisation.
 
-A [Sobel filter]() is one of the basic, yet prominent kernel based techniques to detect outlines and edges, and was a part of my coursework in Computer Graphics, as a part the degree of Computer Science. It involes iterating a fixed kernel over each pixel, which helps detect the change in contrast between adjacent sets of pixels.
+A [Sobel filter](https://en.wikipedia.org/wiki/Sobel_operator) is one of the basic, yet prominent kernel based techniques to detect outlines and edges, and was a part of my coursework in Computer Graphics, as a part the degree of Computer Science. It involes iterating a fixed kernel over each pixel, which helps detect the change in contrast between adjacent sets of pixels.
 
 The basic approach is as follows:
 
@@ -58,18 +62,30 @@ The basic approach is as follows:
 - Assign a color to the outline (I added color varying trignometrically based on time).
 - Mix the color and the sobel filter using Linear Interpolation.
 
+Results:
+
+https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/6b4813a7-38db-4028-a745-00592e13a03a
+
+
+For a player only shader, the sobel filter will be applied to the alpha channel only, instead of the entire color, to detect edges.
+
 ## Other Shaders
 
 After working on the above two shaders, I felt a bit more confident and better well versed in writing shaders for OTC, and thus made a few more shaders. For each of the following, the explanation can be found in the linked code files.
 
 ### Dither Shader
 
-[Link to Code]()
+[Link to Code](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/otclient/modules/game_shaders/shaders/dither.frag)
 
-A dithering post process effect, with a kernel based implementation.
+A dithering post process effect, with a kernel based implementation. The video compression affects the quality a lot, hence I will add the an image instead.
+![image](https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/a55cff9e-f2ea-434b-88de-ce1ae7eac5c4)
 
 ### Time Stop Effect
 
-[Link to Code]()
+[Link to Code](https://github.com/PrateekTh/TFS-OTC-Implementation/blob/main/otclient/modules/game_shaders/shaders/zawarudo.frag)
 
 This effect is inspired by DIO's abilities from JoJo's Bizzare Adventure. Please refer to [this video](https://youtu.be/sWk9qsxEWKg?si=uLWY_0T8rvW0zPHM), for the reference.
+
+
+https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/24a14d4a-a2f0-412c-9374-1ffcba29efa5
+
