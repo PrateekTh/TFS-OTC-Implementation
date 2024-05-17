@@ -36,7 +36,7 @@ As it can be seen, since an `addEvent` is not required, we do not require creati
 
 An interesting observation that I came across in TFS source code was that the OldValue is also stored in the storage map data structure, by first _getting_ the storage value.
 
-<!-- add image here -->
+<img src="https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/c61c92eb-f0e4-499a-8216-8f25952614b6" width="800" title="storagefunction">
 
 Also, the `setStorageValue` function contains the set value as an **optional parameter**. In such cases, the key (for eg 1000) will be removed completely from the map. This could be relevant for saving space in certain situations, where the said value won't be required again, unless it is set again in the next session.
 
@@ -117,7 +117,12 @@ In the above solution, the following adjustments have been made:
 - Get the members in the given party directly, since we do not have need of any other functionality of the `Party` table/object for the current function.
 - Iterate over the length of the `partyMembers` table, instead of the `pairs` function. This is not very necessary, and I go over the reason in the observation.
 
-The interesting observation here was on `Lua`, and the efficiency of for loops. Please refer to [this link](https://springrts.com/wiki/Lua_Performance#TEST_9:_for-loops) for the comparision of the prominent approaches. It can be seen, that since the `pairs` & `ipairs` functions first generate key value pairs, it is generally a better choice to not use them in cases where it is not necessary.
+The interesting observation here was on `Lua`, and the efficiency of for loops. Please refer to [this link](https://springrts.com/wiki/Lua_Performance#TEST_9:_for-loops) for the comparision of the prominent approaches. 
+
+<img src="https://github.com/PrateekTh/TFS-OTC-Implementation/assets/57175545/57985d3d-696c-46b2-862a-c4b924353c33" width="800" title="Results">
+
+
+It can be seen, that since the `pairs` & `ipairs` functions first generate key value pairs, it is generally a better choice to not use them in cases where it is not necessary.
 
 ### Q4. Assume all method calls work fine. Fix the memory leak issue in below method
 
